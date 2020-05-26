@@ -1,0 +1,14 @@
+body{
+     font-family: 'Poppins';
+  font-style: normal;
+}
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-text {
+          color: black;
+      }
+
+      .jumbotron{
+            background-color: #fafafa
+        /*text-align: center;*/
+      }
+
