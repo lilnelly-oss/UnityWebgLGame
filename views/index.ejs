@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
     <script src="/script.js"></script>
+    <link rel="stylesheet" href="/navbar.css">
     <script>
     function alertdocument(){
         swal("About The Game", "This is a Game created by LilNelly-oss. This was created for the Hamilton 2020 Game Jam.");
@@ -308,10 +309,15 @@ color: white;
 box-shadow: none;
 border: 0px;
 }
-
     </style>
 </head>
 <body style="background-color: #ffffff">
+<div id="player">
+    <audio autoplay hidden loop>
+     <source src="https://cdn.glitch.com/8089a181-6054-4ea2-a392-5e96558c70ec%2FSiteSong-1%20(1).mp3?v=1590520737277" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+    </audio>
+</div>
 <div class="container-fluid" style="background-color: #fafafa">
 <div class="container">
 <!--<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #fafafa">
@@ -330,12 +336,12 @@ border: 0px;
 </nav> -->
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="/">FpsGame</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 0px;">
+   <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M14 19h-14v-1h14v1zm9.247-8.609l-3.247 4.049-3.263-4.062-.737.622 4 5 4-5-.753-.609zm-9.247 2.609h-14v-1h14v1zm0-6h-14v-1h14v1z"/></svg>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
+    <br>
       <li class="nav-item active">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>

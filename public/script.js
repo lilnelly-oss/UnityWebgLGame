@@ -6,3 +6,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+document.querySelector( "#nav-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
